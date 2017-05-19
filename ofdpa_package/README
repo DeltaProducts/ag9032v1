@@ -1,0 +1,12 @@
+1. install the OFDPA
+	 dpkg -i ofdpa-ag9032v1_0.3.0.3.1_amd64.deb
+2. 	cd /broadcom/ofdpa
+3. rename the 100G finfigure to ofdpa.cfg
+	cp ofdpa_100G.cfg ofdpa.cfg
+4. install kernel module
+	sh ./install
+5. example : to see the port status
+	cd /broadcom/ofdpa
+    ./ofdpa &
+	./client_drivshell ps
+
