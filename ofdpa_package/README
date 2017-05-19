@@ -1,3 +1,10 @@
+This document describes how to install the OFDPA software provided in
+this package on the Agema AG9032v1 switch.
+
+Pre-requisites:  The switch must have ONL(Open Network Linux) installed via ONIE.
+    Must log in as user root, password is onl
+    All commands run as root user.
+
 1. install the OFDPA
 	 dpkg -i ofdpa-ag9032v1_0.3.0.3.1_amd64.deb
 2. 	cd /broadcom/ofdpa
@@ -5,7 +12,7 @@
 	cp ofdpa_100G.cfg ofdpa.cfg
 4. install kernel module
 	sh ./install
-5. example : to see the port status
+5.  example : to see the port status
 	cd /broadcom/ofdpa
     ./ofdpa &
 	./client_drivshell ps
